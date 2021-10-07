@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/adapterBreed"
-        android:layout_width="wrap_content"
+        android:id="@+id/adapterMessage"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Breed"
-        android:textSize="39sp"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="26dp" />
+        android:text="TextView"
+        android:textSize="34sp" />
+
 </LinearLayout>

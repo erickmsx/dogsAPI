@@ -1,17 +1,21 @@
 package com.erickmxav.dogapi.model;
 
+import java.util.List;
+import java.util.Map;
+
 public class Dog {
 
-    private String message;
+    public Dog(){
 
-    public Dog() {
     }
 
-    public String getMessage() {
+    private Map<String, List<String>> message;
+
+    public Map<String, List<String>> getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(Map<String, List<String>> message) {
         this.message = message;
     }
 }

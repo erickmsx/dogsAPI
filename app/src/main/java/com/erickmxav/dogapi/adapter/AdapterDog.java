@@ -16,10 +16,10 @@ import java.util.List;
 
 public class AdapterDog extends RecyclerView.Adapter<AdapterDog.MyViewHolder> {
 
-    private List<Dog> dogs;
+    private List<String> dogs;
     Context context;
 
-    public AdapterDog(List<Dog> dogs, Context context) {
+    public AdapterDog(List<String> dogs, Context context) {
         this.dogs = dogs;
         this.context = context;
     }
@@ -35,8 +35,8 @@ public class AdapterDog extends RecyclerView.Adapter<AdapterDog.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull AdapterDog.MyViewHolder holder, int position) {
 
-        Dog dog = dogs.get(position);
-        holder.breed.setText(dog.getMessage());
+        String dog = dogs.get(position);
+        holder.message.setText( dog );
     }
 
     @Override
@@ -50,12 +50,12 @@ public class AdapterDog extends RecyclerView.Adapter<AdapterDog.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView breed;
+        TextView message;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            breed = itemView.findViewById(R.id.adapterBreed);
+            message = itemView.findViewById(R.id.adapterMessage);
         }
     }
 }
