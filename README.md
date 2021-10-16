@@ -1,5 +1,8 @@
 # Dog API 🐕
 
+![1](https://user-images.githubusercontent.com/84104484/137602844-34a634da-6cf9-4c61-a376-1ac3ea3236a2.gif)
+
+
 ## The App 💡
 
 App that lists 100 dogs breeds through <a href="https://dog.ceo/dog-api/">Dog API</a> and generates random images to each breed
